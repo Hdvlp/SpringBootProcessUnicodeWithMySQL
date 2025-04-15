@@ -9,14 +9,14 @@ Versions:
 
 
 ----
-As usual, start PowerShell:
+As usual, I started PowerShell:
 powershell
 
 To see my PowerShell version, I ran this command:
 $PSVersionTable.PSVersion
 
 After downloading the zip file from https://dev.mysql.com/downloads/mysql/,
-I extracted the files in mysql-8.0.41-winx64.zip to the path I like:
+I extracted the files in mysql-8.0.41-winx64.zip to the path I liked:
 D:\edit\your\path\mysql-8.0.41-winx64\
 
 I created a folder:
@@ -25,11 +25,13 @@ mkdir D:\edit\your\path\mysql-8.0.41-winx64\data
 I added to the Path variable in the Windows environment:
 D:\edit\your\path\mysql-8.0.41-winx64\bin
 
-Go to the bin folder:
+(You might look at Windows Settings and search "environment" to edit the Path variable.)
+
+I changed the directory to the bin folder:
 cd D:\edit\your\path\mysql-8.0.41-winx64\bin
 
-Copy the my.ini file to the correct location.
-In my case, copy to:
+I copied the my.ini file to the correct location.
+In my case, I copied to:
 D:\edit\your\path\mysql-8.0.41-winx64\bin
 
 .\mysqld.exe  --initialize-insecure --basedir=D:\\edit\\your\\path\\mysql-8.0.41-winx64 --datadir=D:\\edit\\your\\path\\mysql-8.0.41-winx64\\data
